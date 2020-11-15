@@ -1,0 +1,22 @@
+{
+  "name": "adore-me/monolog-fluentd-bundle",
+  "description": "Simple lib-kubernetes-logging wrapper bundle",
+  "type": "bundle",
+  "authors": [{"name": "Andrei Tij", "email": "andrei.tij@adoreme.com"}],
+  "require": {
+    "symfony/monolog-bundle": "*",
+    "fluent/logger": "1.0.*",
+    "adore-me/lib-kubernetes-logging": "^5.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:adore-me/lib-kubernetes-logging.git",
+      "no-api": true
+    }
+  ],
+  "autoload": {
+    "psr-0": {"AdoreMe\\MonologFluentdBundle\\": ""}
+  },
+  "target-dir" : "AdoreMe/MonologFluentdBundle"
+}
